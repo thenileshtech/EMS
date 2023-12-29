@@ -2,6 +2,7 @@ try:
     import os,logging,platform,sys
     from datetime import date
     sys.path.append(r"C:\Users\nilesh\Documents\EMS")
+    sys.path.append(r"C:\EMS")
     import config.error_config as err
     import common.dashboard as dashboard
     import common.data_saver as db
