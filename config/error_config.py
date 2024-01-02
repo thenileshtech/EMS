@@ -10,8 +10,6 @@ e108 = f"""\n** Unable to Capture Your Vote - Possible Reasons Are As Below
 \n1. You already voted\n2. Voting window is closed\n3. Wrong Party / Candidate selected !!"""
 e109 = f"No Candidate Found !!"
 
-print(e108)
-
 
 # Info Codes -
 i101 = f"Operating System :"

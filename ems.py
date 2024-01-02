@@ -1,13 +1,17 @@
 try:
     import os,logging,platform,sys
     from datetime import date
-    sys.path.append(r"C:\Users\nilesh\Documents\EMS")
-    sys.path.append(r"C:\EMS")
+    from pathlib import Path
+    path = Path(__file__).parent
+    sys.path.append(path)
+    # sys.path.append(r"C:\Users\nilesh\Documents\EMS")
+    # sys.path.append(r"C:\EMS")
     import config.error_config as err
     import common.dashboard as dashboard
     import common.data_saver as db
     logger = logging.getLogger('EMS') # Creating logger to track activities
     logging.basicConfig(filename='log/logs.log',filemode='a',encoding='utf-8', level=logging.DEBUG)
+    input()
 except ModuleNotFoundError:
     print(err.e101)
     raise
