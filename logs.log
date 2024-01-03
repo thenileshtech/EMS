@@ -1718,3 +1718,17 @@ INFO:EMS:Visited : Main Menu
 INFO:EMS:Operating System : WINDOWS
 INFO:EMS:Checking Tables
 INFO:EMS:Visited : Main Menu
+WARNING:EMS:DARWIN; Current System is not supported, some functionality will not work; Supported systems are [WINDOWS, LINUX, MAC]
+INFO:EMS:Checking Tables
+INFO:EMS:Visited : Main Menu
+INFO:EMS:Operating System : DARWIN
+INFO:EMS:Checking Tables
+INFO:EMS:Visited : Main Menu
+INFO:EMS:Operating System : DARWIN
+INFO:EMS:Checking Tables
+INFO:EMS:Visited : Main Menu
+INFO:EMS:Visited : Admin Menu
+INFO:EMS:Visited : Main Menu
+INFO:EMS:Visited : Main Menu
+INFO:EMS:Visited : Voter Menu
+INFO:EMS:Visited : Main Menu

@@ -30,7 +30,7 @@ def validate_user(func):
     return authenticate
 
 def data_reader(user_id,password) -> bool:
-    conn = sqlite3.connect(r"DB/ems.db")
+    conn = sqlite3.connect(f'{str(ems.path) + '/ems.db'}')
     my_cursor = conn.cursor()
     my_cursor_2 = conn.cursor()
 

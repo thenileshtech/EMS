@@ -10,8 +10,7 @@ try:
     import common.dashboard as dashboard
     import common.data_saver as db
     logger = logging.getLogger('EMS') # Creating logger to track activities
-    logging.basicConfig(filename='log/logs.log',filemode='a',encoding='utf-8', level=logging.DEBUG)
-    input()
+    logging.basicConfig(filename=f'{str(path) + '/logs.log'}',filemode='a',encoding='utf-8', level=logging.DEBUG)
 except ModuleNotFoundError:
     print(err.e101)
     raise
@@ -22,7 +21,7 @@ except AttributeError:
 class compatibility_check:
     def __init__(self) -> None:
         operating_system = platform.system().upper()
-        if operating_system in ['WINDOWS','LINUX','MAC']:
+        if operating_system in ['WINDOWS','LINUX','DARWIN']:
             logger.info(f"{err.i101} {operating_system}")
         else:
             logger.warning(f"{operating_system}; {err.w101}")
@@ -32,7 +31,7 @@ class clear_screen:
         operating_system = platform.system().upper()
         if operating_system == "WINDOWS":
             os.system('cls')
-        elif operating_system in ['LINUX','MAC']:
+        elif operating_system in ['LINUX','DARWIN']:
             os.system('clear')
             
 def calculateAge(birthDate) -> int:

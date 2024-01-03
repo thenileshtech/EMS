@@ -1,9 +1,9 @@
 try:
     # import logging,sys
-    # sys.path.append(r"C:\Users\nilesh\Documents\EMS")
     import sqlite3
     import config.design_config as design # User Interface config module
-    import config.error_config as err,ems
+    import ems
+    import config.error_config as err
     from datetime import datetime,date
 except ModuleNotFoundError:
     print(err.e101)
@@ -13,7 +13,7 @@ except AttributeError:
     raise AttributeError(f"-----------{err.e102}---------------")
 
 # Create a connection to the database
-conn = sqlite3.connect(r"DB/ems.db")
+conn = sqlite3.connect(f'{str(ems.path) + '/ems.db'}')
 # print("Connection Successful !!")
 
 # Create a cursor
